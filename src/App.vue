@@ -1,13 +1,20 @@
 <template>
   <div id="app">
-    Hello, World!
+    <SiteHeader/>
+    <SiteBody/>
   </div>
 </template>
 
 <script>
+import SiteHeader from "@/components/SiteHeader";
+import SiteBody from "@/components/SiteBody";
 
 export default {
   name: 'App',
+  components: {
+    SiteHeader,
+    SiteBody
+  },
 }
 </script>
 
@@ -16,8 +23,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
   height: 100vh;
   width: 100vw;
 }
