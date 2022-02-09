@@ -1,11 +1,11 @@
 <template>
   <div ref="component">
-    <div ref="hamburger" class="hamburger" @click="toggleHamburger()">
+    <div ref="hamburger" class="hamburger" @click="toggleMenu()">
       <div class="hamburger-patty"></div>
       <div class="hamburger-patty"></div>
       <div class="hamburger-patty"></div>
     </div>
-    <div class="mobile-nav-wrapper">
+    <div ref="mobile-nav-wrapper" class="mobile-nav-wrapper">
       <Navigation/>
     </div>
   </div>
@@ -17,14 +17,24 @@ import Navigation from "@/components/Navigation";
 export default {
   name: 'NavigationMobile',
   methods: {
-    async toggleHamburger(){
-      if (this.$refs.hamburger.classList.contains('hamburger-active')) {
-        this.$refs.hamburger.classList.remove('hamburger-active');
+    async toggleClass(refSelector, className){
+      if (this.$refs[refSelector].classList.contains(className)) {
+        this.$refs[refSelector].classList.remove(className);
       }
       else
       {
-        this.$refs.hamburger.classList.add('hamburger-active');
+        this.$refs[refSelector].classList.add(className);
       }
+    },
+    async toggleHamburger(){
+      await this.toggleClass('hamburger', 'hamburger-active');
+    },
+    async showMenu(){
+      await this.toggleClass('mobile-nav-wrapper', 'menu-active');
+    },
+    async toggleMenu(){
+      await this.toggleHamburger();
+      await this.showMenu();
     }
   },
   components: {
@@ -69,7 +79,21 @@ export default {
   }
 }
 
+.menu-active{
+  transition:  all .35s ease;
+
+  transform: translateX(-100%);
+}
+
 .mobile-nav-wrapper{
   position: fixed;
+
+  background-color: rgba(112, 128, 144, 0.6);
+
+  /*ul {
+    display: flex;
+    flex-flow: column;
+  }*/
+
 }
 </style>
