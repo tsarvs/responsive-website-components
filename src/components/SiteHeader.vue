@@ -18,12 +18,8 @@ export default {
     SiteHeaderNavigation,
   },
   async mounted(){
-    console.log('mounted');
-
     new ResizeObserver(entries => {
       this.mobileView = entries[0].contentRect.width <= componentResizeWith;
-      console.log('mobileView: ', this.mobileView);
-      console.log('contentRect: ', entries[0].contentRect.width);
     }).observe(this.$refs.component);
   },
   data: function (){

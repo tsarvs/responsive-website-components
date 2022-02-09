@@ -1,7 +1,7 @@
-<!-- @format -->
-
 <template>
-  <div>Hello, world! (Logo)</div>
+  <div ref="component" class="site-logo">
+    <img alt="logo" src="../assets/ts-logo-inverted-white-small.png">
+  </div>
 </template>
 
 <script>
@@ -10,4 +10,10 @@ export default {
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.site-logo{
+  display: flex;
+  height: 3rem;
+  width: auto;
+}
+</style>
