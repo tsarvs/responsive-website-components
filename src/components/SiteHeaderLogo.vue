@@ -1,6 +1,8 @@
 <template>
   <div ref="component" class="site-logo">
-    <img alt="logo" src="../assets/ts-logo-inverted-white-small.png">
+    <a href="#">
+      <img alt="logo" src="../assets/ts-logo-inverted-white-small.png">
+    </a>
   </div>
 </template>
 
