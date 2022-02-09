@@ -1,12 +1,18 @@
 <!-- @format -->
 
 <template>
-  <div>Hello, world! (Navigation)</div>
+  <div>
+    <div v-if="mobileView">Hello, world! (Navigation - Mobile)</div>
+    <div v-if="!mobileView">Hello, world! (Navigation - Desktop)</div>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'SiteHeaderNavigation',
+  props:{
+    mobileView: Boolean,
+  }
 };
 </script>
 

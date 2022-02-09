@@ -1,7 +1,7 @@
 <template>
-  <div class="header-container">
+  <div ref="component" class="header-container">
     <SiteHeaderLogo class="header-logo"/>
-    <SiteHeaderNavigation class="header-nav"/>
+    <SiteHeaderNavigation class="header-nav" :mobile-view="this.mobileView"/>
   </div>
 </template>
 
@@ -9,11 +9,27 @@
 import SiteHeaderLogo from "@/components/SiteHeaderLogo";
 import SiteHeaderNavigation from "@/components/SiteHeaderNavigation";
 
+const componentResizeWith = 800;
+
 export default {
   name: 'SiteHeader',
   components: {
     SiteHeaderLogo,
     SiteHeaderNavigation,
+  },
+  async mounted(){
+    console.log('mounted');
+
+    new ResizeObserver(entries => {
+      this.mobileView = entries[0].contentRect.width <= componentResizeWith;
+      console.log('mobileView: ', this.mobileView);
+      console.log('contentRect: ', entries[0].contentRect.width);
+    }).observe(this.$refs.component);
+  },
+  data: function (){
+    return{
+      mobileView: false,
+    };
   },
 };
 </script>
