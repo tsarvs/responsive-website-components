@@ -2,18 +2,14 @@
 
 <template>
   <div>
-    <div v-if="mobileView">
-      <NavigationMobile/>
-    </div>
-    <div v-if="!mobileView">
-      <NavigationDesktop/>
-    </div>
+    <NavigationMobile v-if="mobileView"/>
+    <Navigation v-if="!mobileView"/>
   </div>
 </template>
 
 <script>
 import NavigationMobile from "@/components/NavigationMobile";
-import NavigationDesktop from "@/components/NavigationDesktop";
+import Navigation from "@/components/Navigation";
 
 export default {
   name: 'SiteHeaderNavigation',
@@ -22,7 +18,7 @@ export default {
   },
   components: {
     NavigationMobile,
-    NavigationDesktop,
+    Navigation,
   },
 };
 </script>
