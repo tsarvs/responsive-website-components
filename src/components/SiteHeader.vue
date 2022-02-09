@@ -9,7 +9,7 @@
 import SiteHeaderLogo from "@/components/SiteHeaderLogo";
 import SiteHeaderNavigation from "@/components/SiteHeaderNavigation";
 
-const componentResizeWith = 800;
+const componentResizeWith = 600;
 
 export default {
   name: 'SiteHeader',
@@ -18,12 +18,8 @@ export default {
     SiteHeaderNavigation,
   },
   async mounted(){
-    console.log('mounted');
-
     new ResizeObserver(entries => {
       this.mobileView = entries[0].contentRect.width <= componentResizeWith;
-      console.log('mobileView: ', this.mobileView);
-      console.log('contentRect: ', entries[0].contentRect.width);
     }).observe(this.$refs.component);
   },
   data: function (){
