@@ -19,7 +19,22 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.header-container{
- display: flex;
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 80px;
+
+  background-color: black;
+  color: white;
+
+  .header-logo{
+    padding-left: 1rem;
+  }
+
+  .header-nav{
+    padding-right: 1rem;
+  }
 }
 </style>

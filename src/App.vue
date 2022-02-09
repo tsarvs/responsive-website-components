@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <SiteHeader/>
-    <SiteBody/>
+      <SiteHeader/>
+      <SiteBody/>
   </div>
 </template>
 
@@ -18,7 +18,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
