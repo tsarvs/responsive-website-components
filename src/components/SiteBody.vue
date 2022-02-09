@@ -1,17 +1,19 @@
 <template>
   <div ref="component" id="site-body">
-    <div>Hello, world! (Body)</div>
+    <SiteBodyContent/>
     <SiteFooter/>
   </div>
 </template>
 
 <script>
+import SiteBodyContent from "@/components/SiteBodyContent";
 import SiteFooter from "@/components/SiteFooter";
 
 export default {
   name: 'SiteBody',
   components: {
-    SiteFooter
+    SiteBodyContent,
+    SiteFooter,
   },
 };
 </script>
