@@ -45,6 +45,7 @@ export default {
 
 <style scoped lang="scss">
 .hamburger{
+  animation-direction: alternate;
 
   display: flex;
   flex-flow: column;
@@ -61,28 +62,27 @@ export default {
     border-radius: 1rem;
 
     background-color: white;
+
+    transition: .3s ease-in-out ;
   }
 }
 
 .hamburger-active{
   .hamburger-patty{
-    transition:  all .35s ease;
-
     &:nth-child(1){
-      transform: translateY(.75rem) translateX(0) rotate(45deg);
+      transform: translateY(.75rem) translateX(0) rotate(135deg);
     }
     &:nth-child(2){
       opacity: 0;
+      transform: translateX(100%);
     }
     &:nth-child(3){
-      transform: translateY(-.75rem) translateX(0) rotate(-45deg);
+      transform: translateY(-.75rem) translateX(0) rotate(-135deg);
     }
   }
 }
 
 .menu-active{
-  transition:  all .35s ease;
-
   transform: translateX(-100%);
 }
 
