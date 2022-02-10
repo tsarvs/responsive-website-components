@@ -89,7 +89,7 @@ export default {
 .mobile-nav-wrapper{
   position: fixed;
 
-  top: 80px;
+  top: 4.5rem;
   left: 100vw;
 
   background-color: rgba(112, 128, 144, 0.6);
@@ -97,14 +97,27 @@ export default {
   ::v-deep ul {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
-    align-items: center;
 
-    height: 30vh;
-    width: 100vw;
+    justify-content: space-around;
 
     padding: 0;
     margin: 0;
+
+    li {
+      width: 100vw;
+      height: 3rem;
+
+      padding: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover{
+        background-color: rgba(112, 128, 144, 0.2);
+      }
+
+    }
   }
 
 }
