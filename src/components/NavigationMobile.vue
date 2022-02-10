@@ -45,6 +45,7 @@ export default {
 
 <style scoped lang="scss">
 .hamburger{
+
   display: flex;
   flex-flow: column;
 
@@ -88,12 +89,23 @@ export default {
 .mobile-nav-wrapper{
   position: fixed;
 
+  top: 80px;
+  left: 100vw;
+
   background-color: rgba(112, 128, 144, 0.6);
 
-  /*ul {
+  ::v-deep ul {
     display: flex;
-    flex-flow: column;
-  }*/
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 30vh;
+    width: 100vw;
+
+    padding: 0;
+    margin: 0;
+  }
 
 }
 </style>
