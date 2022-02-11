@@ -25,10 +25,10 @@ export default {
 <style scoped lang="scss">
 .navigation-hyperlink {
   text-decoration: none;
-  color: white;
+  color: var(--site-menu-font-color);
 
   &:hover{
-    color: orangered;
+    color: var(--primary-color);
     text-decoration-line: underline;
   }
 }

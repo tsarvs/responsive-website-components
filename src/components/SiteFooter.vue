@@ -13,7 +13,7 @@ export default {
 <style scoped lang="scss">
 .footer-container{
   height: 60px;
-  background-color: black;
+  background-color: var(--site-menu-color);
   color: white;
 }
 </style>

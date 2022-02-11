@@ -38,8 +38,7 @@ export default {
 
   height: 5rem;
 
-  background-color: black;
-  color: white;
+  background-color: var(--site-menu-color);
 
   .header-logo{
     padding-left: 1rem;

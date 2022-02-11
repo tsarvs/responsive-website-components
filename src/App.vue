@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-      <SiteHeader/>
+      <SiteHeader class="site-header"/>
       <SiteBody/>
   </div>
 </template>
@@ -20,7 +20,7 @@ export default {
 
 <style scoped lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: var(--primary-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -29,5 +29,10 @@ export default {
 
   display: flex;
   flex-flow: column;
+
+  overflow: hidden;
+}
+
+.site-header{
 }
 </style>

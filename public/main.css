@@ -1,3 +1,60 @@
-body{
+:root {
+    /*red*/
+    /*--shades-light: #F8F4F0;
+    --accent-light: #D1A38F;
+    --main-brand-color: #CC8E59;
+    --accent-dark: #987D7D;
+    --shades-dark: #BF3237;
+    --shades-darkest: #a62b2f;*/
+
+    /*green*/
+    /*--shades-light: #EEECE6;
+    --accent-light: #829695;
+    --main-brand-color: #1CC84B;
+    --accent-dark: #368850;
+    --shades-dark: #19251A;
+    --shades-darkest: #141D14;*/
+
+    /*blue*/
+    /*--shades-light: #FBFAFA;
+    --accent-light: #BBBFD4;
+    --main-brand-color: #7EB1E2;
+    --accent-dark: #74A8DC;
+    --shades-dark: #2076D0;
+    --shades-darkest: #1d6dc0;*/
+
+    /*warm*/
+    /*--shades-light: #E1C491;
+    --accent-light: #BB977C;
+    --main-brand-color: #7B3A48;
+    --accent-dark: #7F818C;
+    --shades-dark: #1E2522;
+    --shades-darkest: rgba(25, 31, 29, 0.66);*/
+
+    /*not sure what to call this one but i like it*/
+    --shades-light: #F9FAF9;
+    --accent-light: #D9A74C;
+    --main-brand-color: #AABCB1;
+    --accent-dark: #E6382E;
+    --shades-dark: #35394D;
+    --shades-darkest: rgba(36, 39, 52, 0.66);
+
+    --primary-font-family: Avenir, Helvetica, Arial, sans-serif;
+
+    --primary-color: var(--main-brand-color);
+
+    --secondary-color-light: var(--accent-light);
+    --secondary-color-dark: var(--accent-dark);
+
+    --site-menu-color: var(--shades-darkest);
+    --site-menu--item-background-color-hover-mobile: var(--shades-darkest);
+    --site-menu-font-color: var(--shades-light);
+    --site-menu-hamburger-color: var(--shades-light);
+
+    --site-background-color: var(--shades-dark);
+}
+
+body {
     margin: 0;
+    background-color: var(--site-background-color);
 }
