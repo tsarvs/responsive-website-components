@@ -38,7 +38,7 @@ export default {
 
   height: 5rem;
 
-  background-color: black;
+  background-color: var(--site-menu-color);
   color: white;
 
   .header-logo{

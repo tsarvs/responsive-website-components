@@ -17,5 +17,13 @@ export default {
   display: flex;
   height: 3rem;
   width: auto;
+
+  a{
+    &:hover{
+      transition: .2s ease-in;
+      transform: scale(1.05);
+      opacity: .7;
+    }
+  }
 }
 </style>

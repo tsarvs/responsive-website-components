@@ -54,6 +54,12 @@ export default {
 
   cursor: pointer;
 
+  &:hover {
+    transition: .2s ease-in;
+    transform: scale(1.05);
+    opacity: .7;
+  }
+
   .hamburger-patty{
     height: .35rem;
     width: 100%;
@@ -92,7 +98,8 @@ export default {
   top: 4.5rem;
   left: 100vw;
 
-  background-color: rgba(112, 128, 144, 0.6);
+  background-color: var(--site-menu-color);
+  opacity: .6;
 
   ::v-deep ul {
     display: flex;
@@ -114,7 +121,7 @@ export default {
       justify-content: center;
 
       &:hover{
-        background-color: rgba(112, 128, 144, 0.2);
+        background-color: var(--shades-darkest);
       }
 
     }
