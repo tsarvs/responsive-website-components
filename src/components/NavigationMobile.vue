@@ -67,7 +67,7 @@ export default {
     margin: .2rem 0;
     border-radius: 1rem;
 
-    background-color: white;
+    background-color: var(--site-menu-hamburger-color);
 
     transition: .3s ease-in-out ;
   }
@@ -121,7 +121,7 @@ export default {
       justify-content: center;
 
       &:hover{
-        background-color: var(--shades-darkest);
+        background-color: var(--site-menu--item-background-color-hover-mobile);
       }
 
     }

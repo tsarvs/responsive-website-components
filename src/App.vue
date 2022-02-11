@@ -29,6 +29,8 @@ export default {
 
   display: flex;
   flex-flow: column;
+
+  overflow: hidden;
 }
 
 .site-header{
