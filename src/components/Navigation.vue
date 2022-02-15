@@ -2,16 +2,16 @@
   <nav ref="component">
     <ul class="nav-desktop">
       <li>
-        <NavigationLink text="Home"/>
+        <NavigationLink text="Home" href="/"/>
       </li>
       <li>
-        <NavigationLink text="Projects"/>
+        <NavigationLink text="Projects" href="/projects"/>
       </li>
       <li>
-        <NavigationLink text="Blog"/>
+        <NavigationLink text="Blog" href="/blog"/>
       </li>
       <li>
-        <NavigationLink text="Contact"/>
+        <NavigationLink text="Contact" href="/contact"/>
       </li>
     </ul>
   </nav>
