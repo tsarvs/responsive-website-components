@@ -1,11 +1,11 @@
 :root {
     /*red*/
-    /*--shades-light: #F8F4F0;
+    --shades-light: #F8F4F0;
     --accent-light: #D1A38F;
     --main-brand-color: #CC8E59;
     --accent-dark: #987D7D;
     --shades-dark: #BF3237;
-    --shades-darkest: #a62b2f;*/
+    --shades-darkest: rgba(166, 43, 47, 0.66);
 
     /*green*/
     /*--shades-light: #EEECE6;
@@ -32,12 +32,12 @@
     --shades-darkest: rgba(25, 31, 29, 0.66);*/
 
     /*not sure what to call this one but i like it*/
-    --shades-light: #F9FAF9;
+    /*--shades-light: #F9FAF9;
     --accent-light: #D9A74C;
     --main-brand-color: #AABCB1;
     --accent-dark: #E6382E;
     --shades-dark: #35394D;
-    --shades-darkest: rgba(36, 39, 52, 0.66);
+    --shades-darkest: rgba(36, 39, 52, 0.66);*/
 
     --primary-font-family: Avenir, Helvetica, Arial, sans-serif;
 
@@ -50,6 +50,7 @@
     --site-menu--item-background-color-hover-mobile: var(--shades-darkest);
     --site-menu-font-color: var(--shades-light);
     --site-menu-hamburger-color: var(--shades-light);
+    --site-menu-height: 5rem;
 
     --site-background-color: var(--shades-dark);
 }
@@ -57,4 +58,17 @@
 body {
     margin: 0;
     background-color: var(--site-background-color);
+}
+
+button {
+    background-color: var(--shades-dark);
+    color: var(--shades-light);
+
+    padding: 1.125rem 2.25rem;
+    font-size: 1.3125rem;
+
+    border: none;
+    border-radius: 5rem;
+
+    cursor: pointer;
 }

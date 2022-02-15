@@ -18,9 +18,5 @@ export default {
   color: #fff;
 
   height: 100%;
-
-  .router-content {
-    height: 100%;
-  }
 }
 </style>

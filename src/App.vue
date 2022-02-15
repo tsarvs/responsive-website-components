@@ -24,8 +24,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  height: 100vh;
-  width: 100vw;
+  width: 100%;
 
   display: flex;
   flex-flow: column;
