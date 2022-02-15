@@ -1,5 +1,5 @@
 <template>
-  <div ref="component" class="hero-block">
+  <div ref="component" :class="['hero-block', { 'resized-hero': resizedView }]">
     <video autoplay loop class="hero-background">
       <source src="../assets/flowers.mp4" type="video/mp4">
     </video>
@@ -16,8 +16,20 @@
 </template>
 
 <script>
+const componentResizeWidth = 457;
+
 export default {
   name: 'HeroBlock',
+  mounted() {
+    new ResizeObserver((entries) => {
+      this.resizedView = entries[0].contentRect.width <= componentResizeWidth;
+    }).observe(this.$refs.component);
+  },
+  data: () => {
+    return {
+      resizedView: false,
+    };
+  },
 };
 </script>
 
@@ -33,8 +45,8 @@ export default {
 
   .hero-background {
     position: absolute;
+    bottom: 0;
     width: 100%;
-    bottom: -10rem;
   }
 
   .hero-text {
@@ -44,6 +56,10 @@ export default {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
+
+    h1, h2{
+      text-align: center;
+    }
   }
 
   .hero-button {
@@ -51,6 +67,19 @@ export default {
     padding-left: 3rem;
 
     cursor: pointer;
+  }
+}
+
+.resized-hero {
+  flex-flow: column nowrap;
+  .hero-background {
+    width: auto;
+    top: 0;
+    height: 100%;
+  }
+
+  .hero-button {
+    padding: 0;
   }
 }
 </style>
