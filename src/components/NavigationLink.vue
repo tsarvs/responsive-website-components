@@ -2,11 +2,12 @@
 
 <template>
   <div ref="component">
-    <a :href="this.$props.href" class="navigation-hyperlink">{{this.$props.text}}</a>
+    <router-link :to="$props.href" class="navigation-hyperlink">{{this.$props.text}}</router-link>
   </div>
 </template>
 
 <script>
+
 export default {
   name: 'NavigationLink',
   props: {
@@ -16,9 +17,8 @@ export default {
     },
     href:{
       type: String,
-      default: '#',
     }
-  }
+  },
 };
 </script>
 
@@ -26,6 +26,7 @@ export default {
 .navigation-hyperlink {
   text-decoration: none;
   color: var(--site-menu-font-color);
+  cursor: pointer;
 
   &:hover{
     color: var(--primary-color);

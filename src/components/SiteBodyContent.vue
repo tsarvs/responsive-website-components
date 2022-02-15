@@ -1,8 +1,8 @@
 <!-- @format -->
 
 <template>
-  <div ref="component" class="site-body">
-
+  <div ref="component" class="site-body-content">
+    <router-view class="router-content"/>
   </div>
 </template>
 
@@ -13,10 +13,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.site-body{
+.site-body-content{
   background-color: var(--site-background-color);
   color: #fff;
 
   height: 100%;
+
+  .router-content {
+    height: 100%;
+  }
 }
 </style>
