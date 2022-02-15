@@ -40,6 +40,7 @@ export default {
   z-index: 999;
 
   background-color: var(--site-menu-color);
+  box-shadow: var(--drop-shadow-object);
 
   .header-logo{
     padding-left: 1rem;

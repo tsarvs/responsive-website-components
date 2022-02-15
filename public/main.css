@@ -31,15 +31,24 @@
     --shades-dark: #1E2522;
     --shades-darkest: rgba(25, 31, 29, 0.66);*/
 
-    /*not sure what to call this one but i like it*/
-    /*--shades-light: #F9FAF9;
-    --accent-light: #D9A74C;
-    --main-brand-color: #AABCB1;
-    --accent-dark: #E6382E;
-    --shades-dark: #35394D;
-    --shades-darkest: rgba(36, 39, 52, 0.66);*/
+    /*yellowish*/
+    /*--shades-light: #E9E2CE;
+    --accent-light: #EFD087;
+    --main-brand-color: #B78265;
+    --accent-dark: #803728;
+    --shades-dark: #402E32;
+    --shades-darkest: rgba(44, 31, 34, 0.66);*/
 
-    --primary-font-family: Avenir, Helvetica, Arial, sans-serif;
+    /*not sure what to call this one but i like it*/
+    /*--shades-light: #E9E2CE;*/
+    /*--accent-light: #EFD087;*/
+    /*--main-brand-color: #B78265;*/
+    /*--accent-dark: #803728;*/
+    /*--shades-dark: #402E32;*/
+    /*--shades-darkest: rgba(44, 31, 34, 0.66);*/
+
+    --primary-font-family: 'Roboto', sans-serif;
+    --display-font-family: 'Playfair Display', serif;
 
     --primary-color: var(--main-brand-color);
 
@@ -53,6 +62,9 @@
     --site-menu-height: 5rem;
 
     --site-background-color: var(--shades-dark);
+
+    --drop-shadow-object: 0 3px 10px rgb(0 0 0 / 0.2);
+    --drop-shadow-font: 0 3px 20px rgb(0 0 0 / 0.2);
 }
 
 body {
@@ -65,6 +77,8 @@ button {
     color: var(--shades-light);
 
     padding: 1.125rem 2.25rem;
+
+    font-family: var(--primary-font-family);
     font-size: 1.3125rem;
 
     border: none;
