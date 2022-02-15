@@ -2,7 +2,7 @@
 
 <template>
   <div ref="component">
-    <router-link :to="$props.href" class="navigation-hyperlink" @click="logClick($props.href)">{{this.$props.text}}</router-link>
+    <router-link :to="$props.href" class="navigation-hyperlink">{{this.$props.text}}</router-link>
   </div>
 </template>
 
@@ -18,11 +18,6 @@ export default {
     href:{
       type: String,
     }
-  },
-  methods:{
-    async logClick(href){
-      console.log('href: ', href)
-    },
   },
 };
 </script>
