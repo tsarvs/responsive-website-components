@@ -55,6 +55,9 @@
     --secondary-color-light: var(--accent-light);
     --secondary-color-dark: var(--accent-dark);
 
+    --block-color-light: var(--shades-light);
+    --block-color-dark: var(--shades-dark);
+
     --site-menu-color: var(--shades-darkest);
     --site-menu--item-background-color-hover-mobile: var(--shades-darkest);
     --site-menu-font-color: var(--shades-light);
@@ -64,7 +67,13 @@
     --site-background-color: var(--shades-dark);
 
     --drop-shadow-object: 0 3px 10px rgb(0 0 0 / 0.2);
-    --drop-shadow-font: 0 3px 20px rgb(0 0 0 / 0.2);
+    --drop-shadow-font: 2px 2px rgb(0 0 0 / 0.2);
+
+    --padding-small: .5rem;
+    --padding-medium: 1.5rem;
+    --padding-large: 5rem;
+
+    --block-height-medium: 30rem;
 }
 
 body {
