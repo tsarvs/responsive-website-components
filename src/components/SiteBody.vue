@@ -20,7 +20,7 @@ export default {
 
 <style scoped lang="scss">
 #site-body{
-  height: 100%;
+  min-height: calc(100vh - var(--site-menu-height));
 
   display: flex;
   flex-flow: column nowrap;

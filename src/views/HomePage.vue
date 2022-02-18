@@ -1,10 +1,17 @@
 <template>
-  <div>Hello, world! (Home Page)</div>
+  <div ref="view">
+    <hero-block/>
+    <welcome-block/>
+  </div>
 </template>
 
 <script>
+import HeroBlock from "@/components/HeroBlock";
+import WelcomeBlock from "@/components/WelcomeBlock";
+
 export default {
   name: 'HomePage',
+  components: { HeroBlock,  WelcomeBlock, },
 };
 </script>
 

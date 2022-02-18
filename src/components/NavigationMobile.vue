@@ -95,7 +95,7 @@ export default {
 .mobile-nav-wrapper{
   position: fixed;
 
-  top: 4.5rem;
+  top: 80px;
   left: 100vw;
 
   background-color: var(--site-menu-color);
