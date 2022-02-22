@@ -8073,6 +8073,11 @@
     "loader-utils" "^1.1.0"
     "neo-async" "^2.6.0"
 
+"three@^0.137.5":
+  "integrity" "sha512-rTyr+HDFxjnN8+N/guZjDgfVxgHptZQpf6xfL/Mo7a5JYIFwK6tAq3bzxYYB4Ae0RosDZlDuP+X5aXDXz+XnHQ=="
+  "resolved" "https://registry.npmjs.org/three/-/three-0.137.5.tgz"
+  "version" "0.137.5"
+
 "through@^2.3.6":
   "integrity" "sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU="
   "resolved" "https://registry.npmjs.org/through/-/through-2.3.8.tgz"
@@ -8169,6 +8174,11 @@
   dependencies:
     "psl" "^1.1.28"
     "punycode" "^2.1.1"
+
+"troisjs@^0.3.4":
+  "integrity" "sha512-aonG2lw+QyTjytJpvYIaGv2AiIKzm+eSYT4ByG64uVh+jCLAWxnblS6bCewIckvCMqs2j3z351Q/IFIPWYViCQ=="
+  "resolved" "https://registry.npmjs.org/troisjs/-/troisjs-0.3.4.tgz"
+  "version" "0.3.4"
 
 "tryer@^1.0.1":
   "integrity" "sha512-c3zayb8/kWWpycWYg87P71E1S1ZL6b6IJxfb5fvsUgsf0S2MVGaDhDXXjDMpdCpfWXqptc+4mXwmiy1ypXqRAA=="
