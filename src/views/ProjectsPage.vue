@@ -1,16 +1,16 @@
 <template>
   <div ref="view">
-    <three-dimensional-canvas/>
+    <hello-world3-d/>
   </div>
 </template>
 
 <script>
-import ThreeDimensionalCanvas from "@/components/ThreeDimensionalCanvas";
+import HelloWorld3D from '@/components/threejs-doodles/HelloWorld3D';
 
 export default {
   name: 'ProjectsPage',
   components : {
-    ThreeDimensionalCanvas,
+    HelloWorld3D,
   },
 };
 </script>
