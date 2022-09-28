@@ -8,7 +8,8 @@
     </div>
     <div class="hero-content">
       <div class="hero-text">
-        <h1 class="hero-title">Elegant. Responsive. Fast.</h1>
+<!--        <h1 class="hero-title">Elegant. Responsive. Fast.</h1>-->
+        <h1 class="hero-title">Buzzwords go here.</h1>
         <h2 class="hero-subtitle">Powerful websites built for all screen sizes.</h2>
       </div>
       <div class="hero-button">

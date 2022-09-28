@@ -9,7 +9,7 @@
 import SiteHeaderLogo from "@/components/SiteHeaderLogo";
 import SiteHeaderNavigation from "@/components/SiteHeaderNavigation";
 
-const componentResizeWith = 600;
+const componentResizeWith = 600;//px
 
 export default {
   name: 'SiteHeader',
