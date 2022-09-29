@@ -1,8 +1,8 @@
 <template>
   <div ref="component" class="site-logo">
-    <a href="#">
+    <router-link to="/" class="site-logo">
       <img alt="logo" src="../assets/ts-logo-inverted-white-small.png">
-    </a>
+    </router-link>
   </div>
 </template>
 
@@ -13,13 +13,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.site-logo{
+.site-logo {
   display: flex;
   height: 3rem;
   width: auto;
 
-  a{
-    &:hover{
+  a {
+    &:hover {
       transition: .2s ease-in;
       transform: scale(1.05);
       opacity: .7;
