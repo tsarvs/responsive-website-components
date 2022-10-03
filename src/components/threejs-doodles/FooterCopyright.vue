@@ -1,5 +1,5 @@
 <template>
-  <text ref="component" class="footer-copyright">&copy; 2022, Tom Sarver</text>
+  <text ref="component" class="footer-copyright">Copyright &copy; 2022, Tom Sarver</text>
 </template>
 
 <script>
