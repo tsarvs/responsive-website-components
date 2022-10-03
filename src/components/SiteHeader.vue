@@ -1,12 +1,12 @@
 <template>
   <div ref="component" class="header-container">
-    <SiteHeaderLogo class="header-logo"/>
+    <SiteLogo class="header-logo"/>
     <SiteHeaderNavigation class="header-nav" :mobile-view="this.mobileView"/>
   </div>
 </template>
 
 <script>
-import SiteHeaderLogo from "@/components/SiteHeaderLogo";
+import SiteLogo from "@/components/SiteLogo";
 import SiteHeaderNavigation from "@/components/SiteHeaderNavigation";
 
 const componentResizeWith = 600;
@@ -14,7 +14,7 @@ const componentResizeWith = 600;
 export default {
   name: 'SiteHeader',
   components: {
-    SiteHeaderLogo,
+    SiteLogo,
     SiteHeaderNavigation,
   },
   async mounted(){
