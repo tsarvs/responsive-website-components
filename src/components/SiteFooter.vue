@@ -1,7 +1,7 @@
 <!-- @format -->
 
 <template>
-  <div ref="component" class="footer-container">
+  <div ref="component" :class="['footer-container', { 'resized-footer' : resizedView }]">
     <div class="footer-row-A">
       <div class="footer-subsection">
         <FooterSubsection1/>
@@ -31,6 +31,8 @@ import FooterSubsection3 from "@/components/FooterSubsection3";
 import FooterSubsection4 from "@/components/FooterSubsection4";
 import FooterSubsection5 from "@/components/FooterSubsection5";
 
+const componentResizeWidth = 400;
+
 export default {
   name: 'SiteFooter',
   components: {
@@ -40,6 +42,16 @@ export default {
     FooterSubsection4,
     FooterSubsection5
   },
+  async mounted(){
+    new ResizeObserver((entries) => {
+      this.resizedView = entries[0].contentRect.width <= componentResizeWidth;
+    }).observe(this.$refs.component);
+  },
+  data: () => {
+    return {
+      resizedView: false,
+    };
+  }
 };
 </script>
 
@@ -61,8 +73,12 @@ export default {
     display: flex;
     flex-flow: row;
 
-    //width: calc(100% - 5em);
     width: 100%;
+  }
+}
+.resized-footer {
+  .footer-row-A, .footer-row-B {
+    flex-flow: column-reverse nowrap;
   }
 }
 </style>
