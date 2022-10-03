@@ -1,5 +1,5 @@
 <template>
-  <div ref="component" class="welcome-block">
+  <div ref="component" :class="['welcome-block', {'resized-welcome-block': resizedView}]">
     <div class="welcome-content">
       <div class="welcome-left">
         <h1 class="welcome-title">Pretty cool stuff, right...</h1>
@@ -21,14 +21,25 @@
 </template>
 
 <script>
+const componentResizeWidth = 400;
+
 export default {
   name: 'WelcomeBlock',
+  async mounted() {
+    new ResizeObserver((entries) => {
+      this.resizedView = entries[0].contentRect.width <= componentResizeWidth;
+    }).observe(this.$refs.component);
+  },
+  data: () => {
+    return {
+      resizedView: false,
+    };
+  },
 };
 </script>
 
 <style scoped lang="scss">
 .welcome-block {
-  height: var(--block-height-medium);
   background-color: var(--block-color-light);
   color: var(--shades-dark);
 
@@ -62,6 +73,25 @@ export default {
         width: 10rem;
         background-color: var(--shades-dark);
       }
+    }
+  }
+}
+
+.resized-welcome-block {
+  padding: 1rem;
+
+  .welcome-content {
+    flex-flow: column;
+
+    .welcome-left, .welcome-right {
+      width: 100%;
+    }
+  }
+
+  .welcome-bottom {
+    text-align: center;
+    h3 {
+      margin: unset;
     }
   }
 }
