@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div ref="component" class="footer-subsection-2">
     <Navigation/>
   </div>
 </template>
@@ -15,6 +15,12 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+.footer-subsection-2 {
+  nav ::v-deep(ul) {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: unset;
+  }
+}
 </style>

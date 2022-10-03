@@ -25,6 +25,7 @@ export default {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+  justify-content: center;
   gap: 0 .5rem;
 
   .footer-logo ::v-deep(img){
