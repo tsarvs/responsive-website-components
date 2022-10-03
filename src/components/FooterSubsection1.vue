@@ -27,6 +27,7 @@ export default {
   align-items: center;
   justify-content: center;
   gap: 0 .5rem;
+  height: 100%;
 
   .footer-logo ::v-deep(img){
     scale: .61;
