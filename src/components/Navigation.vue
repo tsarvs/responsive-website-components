@@ -8,9 +8,6 @@
         <NavigationLink text="Projects" href="/projects"/>
       </li>
       <li>
-        <NavigationLink text="Blog" href="/blog"/>
-      </li>
-      <li>
         <NavigationLink text="Contact" href="/contact"/>
       </li>
     </ul>
