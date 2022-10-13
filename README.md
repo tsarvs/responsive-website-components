@@ -1,8 +1,10 @@
 # Responsive Website Components
 I'm using this repository to experiment with building responsive Vue components with the help of the wonderous ResizeObserver. Making vue components respond to component width rather than the screen width is important due to the nature of Vue and making components that can be reusable throughout the site. This can be achieved super simply by creating a ResizeObserver during the mounting of a component. 
 
-## Example
+## Examples
+### Desktop
 ![Desktop Screenshot](https://github.com/tsarvs/responsive-website-components/blob/master/src/assets/screenshotDesktop.png?raw=true)
+### Mobile
 ![Mobile Screenshot](https://github.com/tsarvs/responsive-website-components/blob/master/src/assets/screenshotMobile.png?raw=true)
 
 ## Project setup
