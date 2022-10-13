@@ -3,7 +3,7 @@ I'm using this repository to experiment with building responsive Vue components 
 
 ## Example
 ![Desktop Screenshot](https://github.com/tsarvs/responsive-website-components/blob/master/src/assets/screenshotDesktop.png?raw=true)
-![Mobile Screenshot](https://github.com/tsarvs/responsive-website-components/blob/master/src/assets/screenshotMobile?raw=true)
+![Mobile Screenshot](https://github.com/tsarvs/responsive-website-components/blob/master/src/assets/screenshotMobile.png?raw=true)
 
 ## Project setup
 ```
