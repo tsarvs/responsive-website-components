@@ -13,7 +13,9 @@
                 </div>
                 <div style="display: flex; flex-flow: column nowrap;">
                     <h3>Mobile</h3>
-                    <img alt="Mobile Screenshot" style="width: 100%;  max-width: 12.5rem; align-self: center;" src="https://github.com/tsarvs/responsive-website-components/blob/master/src/assets/screenshotMobile.png?raw=truee">
+                    <div style="width: 100%;  max-width: 12.5rem; align-self: center;">
+                        <img alt="Mobile Screenshot" src="https://github.com/tsarvs/responsive-website-components/blob/master/src/assets/screenshotMobile.png?raw=truee">
+                    </div>
                 </div>
             </div>
         </div>
