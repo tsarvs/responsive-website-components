@@ -101,7 +101,7 @@ export default {
   background-color: var(--site-menu-color);
   opacity: .6;
 
-  ::v-deep ul {
+  :deep(ul) {
     display: flex;
     flex-flow: column nowrap;
 

@@ -29,7 +29,7 @@ export default {
   gap: 0 .5rem;
   height: 100%;
 
-  .footer-logo ::v-deep(img){
+  .footer-logo :deep(img){
     scale: .61;
   }
 

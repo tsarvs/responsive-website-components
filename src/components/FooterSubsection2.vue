@@ -17,7 +17,7 @@ export default {
 
 <style scoped lang="scss">
 .footer-subsection-2 {
-  nav ::v-deep(ul) {
+  nav :deep(ul) {
     display: flex;
     flex-flow: column nowrap;
     padding: unset;
