@@ -1,5 +1,3 @@
-<!-- @format -->
-
 <template>
   <div ref="component">
     <router-link :to="$props.href" class="navigation-hyperlink">{{this.$props.text}}</router-link>
