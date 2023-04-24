@@ -5,7 +5,7 @@
         <NavigationLink text="Home" href="/"/>
       </li>
       <li>
-        <NavigationDropdown text="Projects" href="/projects"/>
+        <NavigationLink text="Projects" href="/projects"/>
       </li>
       <li>
         <NavigationLink text="Contact" href="/contact"/>
@@ -16,13 +16,11 @@
 
 <script>
 import NavigationLink from "@/components/NavigationLink";
-import NavigationDropdown from "@/components/NavigationDropdown";
 
 export default {
   name: 'NavigationDesktop',
   components: {
     NavigationLink,
-    NavigationDropdown,
   },
 };
 </script>
@@ -31,7 +29,6 @@ export default {
 .nav-desktop{
     display: flex;
     flex-direction: row;
-    align-items: center;
 
     list-style-type: none;
 
