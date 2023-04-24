@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <template>
   <div>
     <NavigationMobile v-if="mobileView"/>

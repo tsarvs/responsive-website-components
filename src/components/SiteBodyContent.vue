@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <template>
   <div ref="component" class="site-body-content">
     <router-view class="router-content"/>

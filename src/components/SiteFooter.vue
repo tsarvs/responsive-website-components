@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <template>
   <div ref="component" :class="['footer-container', { 'resized-footer' : resizedView }]">
     <div class="footer-row-A">
